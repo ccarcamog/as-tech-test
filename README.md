@@ -9,3 +9,9 @@ As the solution will need a big Data approch, there are several ways to achive i
 ## Data Architecture
 Now that I have defined AWS as my cloud provider, the entire solution will take place using the following architecture:
 ![Data Architecture](/readme_img/arq.png)
+
+For more information about the tecnologies to be used, please check the following information:
+- [Amazon S3](https://aws.amazon.com/s3/)
+- [AWS Glue](https://aws.amazon.com/glue/)
+- [Amazon Redshift](https://aws.amazon.com/es/redshift/)
+- [Power BI](https://powerbi.microsoft.com/es-es/what-is-power-bi/)
