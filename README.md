@@ -103,7 +103,7 @@ After all processes ran successfully, you may want to see data. you can see and 
 - **Amazon S3 for Raw and Stg Layer:** I have shared the keys to connect to bucket. If you want to see full structure of folders, you can access to my S3 bucket using [S3 Browser](https://s3browser.com/). You can check the data in the Parquet files using [ParquetViewer](https://github.com/mukunku/ParquetViewer).
 
 ## Data Visualization
-Finally, after the entire Data Wrangling process is over, it's time create visuals. I have created a Power BI report to represent the data extracted and loaded. You can check the report [here.](https://app.powerbi.com/view?r=eyJrIjoiODdiODJiYzYtODU0OS00MGY5LTg3OTgtNDU5ODI5Y2QxNWIyIiwidCI6ImM2N2Y3Mjg3LWRkMDAtNDZjMC1iOTUzLTA2NWZiYjIyY2ExNiJ9&pageName=ReportSection)
+Finally, after the entire Data Wrangling process is over, it's time create visuals. I have created a Power BI report to represent the data extracted and loaded. You can check the report [here.](https://app.powerbi.com/view?r=eyJrIjoiODdiODJiYzYtODU0OS00MGY5LTg3OTgtNDU5ODI5Y2QxNWIyIiwidCI6ImM2N2Y3Mjg3LWRkMDAtNDZjMC1iOTUzLTA2NWZiYjIyY2ExNiJ9&pageName=ReportSection) The source file for this visualization is stored in the S3 bucket.
 
 After checking the data, I can stablish some conclusion about the data:
 1. Sunday is the day when more orders are processed. 21% of orders are processed on sundays. This could mean, that clients prefer to go to the store on weekends to have supplements for all the week.
