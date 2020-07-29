@@ -20,4 +20,12 @@ For more information about the tecnologies to be used, please check the followin
 - **Data sources:** Will be the flat files provided for the solutions of this assesment, without any transformation or change. The files will be allocated in S3 for this test, but they can be allocated in other source.
 - **Raw Layer:** Will allocate the files with cleaning and cleasing transformations. Any issue with data will be solved in this stage. AWS Glue will be in charge to extract data from Data surves layer, transform the data and store it again in S3. The data in this stage, has no analytic porpuses.
 - **Stage Layer:** Will be the previous layer for presentation porpuses. in this stage, the data will be allocated according to the dimensional model. The data will be cataloged by dimension or fact table. AWS Glue, will select the data for each dimension or fact table from the data sources. This Layer will be stored in S3.
-- **Dim Layer:** Also named as Presentation Layer. The dimensional model will be allocated here. All the dimension and fact fill be related via surrogate keys. Amazon Redshift will be used for this porpouses. Power BI will extract the data directrly from Redshilft for Data Visualizations.
+- **Dimensional Layer:** Also named as Presentation Layer. The dimensional model will be allocated here. All the dimension and fact fill be related via surrogate keys. Amazon Redshift will be used for this porpouses. Power BI will extract the data directrly from Redshilft for Data Visualizations.
+
+## Dimensional Model
+My proposal as Dimensional Model, for this solution is the following:
+![DimModel](/readme_img/dm.png)
+
+I propose a Kimball Star Model, with a Fact Table storing all transactions at order detail level. As you can see, there is a relation between each dimension with a key in the Fact Table. Except for dim_aisle and dim_department, besides having a relation with Fact Table table, they have relation with dim_product. In a first moment, I decided to use a dimension to store 3 units in one table, but thinking on having independent catalogs for aisle and department can help to give a easier maintenance.
+
+
