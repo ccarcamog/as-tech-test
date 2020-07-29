@@ -103,6 +103,11 @@ After all processes ran successfully, you may want to see data. you can see and 
 - **Amazon S3 for Raw and Stg Layer:** I have shared the keys to connect to bucket. If you want to see full structure of folders, you can access to my S3 bucket using [S3 Browser](https://s3browser.com/). You can check the data in the Parquet files using [ParquetViewer](https://github.com/mukunku/ParquetViewer).
 
 ## Data Visualization
-Finally, after the entire Data Wrangling process is over, it's time create visuals. 
+Finally, after the entire Data Wrangling process is over, it's time create visuals. I have created a Power BI report to represent the data extracted and loaded. You can check the report [here.] (https://app.powerbi.com/view?r=eyJrIjoiODdiODJiYzYtODU0OS00MGY5LTg3OTgtNDU5ODI5Y2QxNWIyIiwidCI6ImM2N2Y3Mjg3LWRkMDAtNDZjMC1iOTUzLTA2NWZiYjIyY2ExNiJ9&pageName=ReportSection)
+
+After checking the data, I can stablish some conclusion about the data:
+1. Sunday is the day when more orders are processed. 21% of orders are processed on sundays. This could mean, that clients prefer to go to the store on weekends to have supplements for all the week.
+1. The rush hours in the store are between 10am and 4pm. These can lead to thinks is could be a good idea to close the store between 10pm and 6am.
+1. Clients love fruits and vegetable. Those are the most visited aisles in the supermarket.
 
 
